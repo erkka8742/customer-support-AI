@@ -1,0 +1,302 @@
+[
+    {
+      "id": 1,
+      "category": "Account Management",
+      "document_title": "App Login Guide",
+      "content": "To change your password on the Sunshine Solar app, log in, tap the 'Profile' icon in the bottom right corner, select 'Security', and tap 'Change Password'. You will need to enter your old password first."
+    },
+    {
+      "id": 2,
+      "category": "Account Management",
+      "document_title": "App Login Guide",
+      "content": "If you forgot your password, open the Sunshine Solar app and tap 'Forgot Password' on the login screen. Enter your email address, and we will send you a reset link within 5 minutes."
+    },
+    {
+      "id": 3,
+      "category": "Account Management",
+      "document_title": "Family Access",
+      "content": "You can share your Sunshine Solar system data with family members. Go to Settings > Household > Add Member. Type in their email, and they will receive an invite to create their own login."
+    },
+    {
+      "id": 4,
+      "category": "Account Management",
+      "document_title": "Billing Updates",
+      "content": "To update your credit card or bank account on file for your solar loan, log into the web portal on your computer and navigate to the 'Billing & Payments' tab. This feature is currently not available in the mobile app."
+    },
+    {
+      "id": 5,
+      "category": "Account Management",
+      "document_title": "Finding Account Number",
+      "content": "Your Sunshine Solar account number is a 10-digit number starting with 'SS'. You can find it at the top of your monthly statement or in the app under Profile > Account Details."
+    },
+    {
+      "id": 6,
+      "category": "Account Management",
+      "document_title": "App Troubleshooting",
+      "content": "If the Sunshine Solar app is crashing or freezing, try force-closing the app and reopening it. If that doesn't work, delete the app from your phone and download the latest version from the App Store or Google Play."
+    },
+    {
+      "id": 7,
+      "category": "Account Management",
+      "document_title": "Dark Mode Settings",
+      "content": "The Sunshine Solar app supports Dark Mode to save your phone's battery. You can toggle this on or off by going to Settings > Appearance > Theme."
+    },
+    {
+      "id": 8,
+      "category": "Account Management",
+      "document_title": "Email Notifications",
+      "content": "If you are receiving too many emails from Sunshine Solar, you can unsubscribe from marketing emails at the bottom of the email. However, you cannot opt out of important system alerts or billing notices."
+    },
+    {
+      "id": 9,
+      "category": "Account Management",
+      "document_title": "Exporting Data",
+      "content": "If you want to view your energy data in Excel, log into the Sunshine Solar web portal. Go to the 'Energy Graph' page, select your date range, and click the 'Download CSV' button in the top right corner."
+    },
+    {
+      "id": 10,
+      "category": "Account Management",
+      "document_title": "Moving House",
+      "content": "If you are selling your home, the solar panels stay with the house. Contact Sunshine Solar Support at least 30 days before your closing date so we can help transfer the app access and warranties to the new buyer."
+    },
+    {
+      "id": 11,
+      "category": "Basic Troubleshooting",
+      "document_title": "System Suddenly Off",
+      "content": "If your solar panels suddenly stop working on a sunny day, first look outside to see if your neighbors have power. If there is a neighborhood power outage, your solar panels will automatically shut off for safety reasons unless you have a battery backup."
+    },
+    {
+      "id": 12,
+      "category": "Basic Troubleshooting",
+      "document_title": "Wi-Fi Disconnected",
+      "content": "If you change your home internet router or Wi-Fi password, your Sunshine Solar app will stop updating. You will need to press the 'WPS' button on your new router and the sync button on your solar gateway to reconnect them."
+    },
+    {
+      "id": 13,
+      "category": "Basic Troubleshooting",
+      "document_title": "Zero Production at Night",
+      "content": "It is completely normal for your app to show zero solar production at night. Solar panels require sunlight to generate electricity. Your home will automatically draw power from the utility grid after the sun goes down."
+    },
+    {
+      "id": 14,
+      "category": "Basic Troubleshooting",
+      "document_title": "Low Production Today",
+      "content": "If your app shows lower energy production today than yesterday, it is likely due to the weather. Heavy clouds, rain, or overcast skies will significantly reduce the amount of electricity your system can generate."
+    },
+    {
+      "id": 15,
+      "category": "Basic Troubleshooting",
+      "document_title": "Inverter Red Light",
+      "content": "A solid green light on your main inverter box means everything is running perfectly. If you see a solid red light, the system has detected a fault. Please take a photo of the screen and contact Sunshine Solar support."
+    },
+    {
+      "id": 16,
+      "category": "Basic Troubleshooting",
+      "document_title": "Resetting the System",
+      "content": "To reboot your solar system, find your main electrical panel and flip the breaker labeled 'Solar' to the OFF position. Wait a full 60 seconds, then flip it back to ON. It may take up to 15 minutes for the app to reconnect."
+    },
+    {
+      "id": 17,
+      "category": "Basic Troubleshooting",
+      "document_title": "Humming Noise",
+      "content": "Your main solar inverter box will make a quiet humming or buzzing noise during the day while it converts energy. This is completely normal. The noise will stop entirely at night when the system goes to sleep."
+    },
+    {
+      "id": 18,
+      "category": "Basic Troubleshooting",
+      "document_title": "App Data Delay",
+      "content": "The Sunshine Solar app does not update in exact real-time. It sends data to your phone in 15-minute intervals. If the sun just came out from behind a cloud, give the app a few minutes to catch up."
+    },
+    {
+      "id": 19,
+      "category": "Basic Troubleshooting",
+      "document_title": "Gateway Unplugged",
+      "content": "There is a small white box plugged into an outlet near your router called the Gateway. If this gets accidentally unplugged by a vacuum or pet, your system will still make power, but your app will go blank. Just plug it back in."
+    },
+    {
+      "id": 20,
+      "category": "Basic Troubleshooting",
+      "document_title": "System Updates",
+      "content": "Sunshine Solar occasionally pushes software updates to your equipment overnight. If you open the app at 3 AM and see a 'System Offline' message, it is likely just a routine update. Check again in the morning."
+    },
+    {
+      "id": 21,
+      "category": "Weather & Maintenance",
+      "document_title": "Snow on Panels",
+      "content": "Do not attempt to scrape or sweep snow off your solar panels. Brooms and shovels will scratch the glass and void your warranty. The panels are dark and will heat up quickly in the sun, causing the snow to melt and slide off on its own."
+    },
+    {
+      "id": 22,
+      "category": "Weather & Maintenance",
+      "document_title": "Washing Panels",
+      "content": "In most areas, normal rainfall is enough to keep your solar panels clean. If you live in a very dusty area, you can spray them with a garden hose from the ground early in the morning. Never use soap, Windex, or a pressure washer."
+    },
+    {
+      "id": 23,
+      "category": "Weather & Maintenance",
+      "document_title": "Hail Damage",
+      "content": "Sunshine Solar panels are tested to withstand golf-ball-sized hail striking at high speeds. They are much stronger than standard roof shingles. However, if unusually massive hail shatters a panel, contact your homeowners insurance."
+    },
+    {
+      "id": 24,
+      "category": "Weather & Maintenance",
+      "document_title": "Leaves and Debris",
+      "content": "If you notice a large buildup of autumn leaves resting on your solar panels, it can lower your energy production. You can use a standard garden hose to spray the leaves off, but do not climb on the roof with a leaf blower."
+    },
+    {
+      "id": 25,
+      "category": "Weather & Maintenance",
+      "document_title": "Bird Droppings",
+      "content": "A few bird droppings on your solar panels will not noticeably affect your energy production. The system is designed to bypass small blocked areas. The next heavy rainstorm will wash them away."
+    },
+    {
+      "id": 26,
+      "category": "Weather & Maintenance",
+      "document_title": "Extreme Heat",
+      "content": "Solar panels actually love light, not heat. On extremely hot summer days (over 100 degrees), your panels become slightly less efficient. This is normal physics, and you may see slightly lower production than on a cool, sunny spring day."
+    },
+    {
+      "id": 27,
+      "category": "Weather & Maintenance",
+      "document_title": "Lightning Strikes",
+      "content": "Your Sunshine Solar system is fully grounded. In the rare event that your home is struck by lightning, the solar system has built-in surge protectors to prevent electrical fires. However, the inverter may need to be replaced if the surge is too strong."
+    },
+    {
+      "id": 28,
+      "category": "Weather & Maintenance",
+      "document_title": "Tree Shading",
+      "content": "If your energy production drops slowly over a few years, check the trees in your yard. Newly grown branches might be casting shadows on your roof. Homeowners are responsible for trimming their own trees to keep the panels in the sun."
+    },
+    {
+      "id": 29,
+      "category": "Weather & Maintenance",
+      "document_title": "Hurricane and Wind",
+      "content": "The mounting hardware holding your solar panels to the roof is engineered to withstand hurricane-force winds up to 140 mph. During severe windstorms, you do not need to do anything to secure the panels."
+    },
+    {
+      "id": 30,
+      "category": "Weather & Maintenance",
+      "document_title": "Solar Eclipse",
+      "content": "During a solar eclipse, your energy production will drop significantly as the sun is blocked, just like a very heavy, fast-moving cloud. Once the eclipse passes, production will immediately return to normal."
+    },
+    {
+      "id": 31,
+      "category": "Physical Care & Safety",
+      "document_title": "Walking on Panels",
+      "content": "Never walk, step, sit, or lean on your solar panels. Even if the glass does not shatter, your body weight can create invisible micro-cracks in the solar cells underneath, permanently ruining the panel's ability to make power."
+    },
+    {
+      "id": 32,
+      "category": "Physical Care & Safety",
+      "document_title": "Hanging Lights",
+      "content": "Do not attach Christmas lights, decorations, or clips directly to the solar panels or their metal mounting rails. You may puncture a wire or damage the weatherproofing. Hang decorations on your roof eaves only."
+    },
+    {
+      "id": 33,
+      "category": "Physical Care & Safety",
+      "document_title": "Roof Replacements",
+      "content": "If you need to repair or replace your roof shingles, contact Sunshine Solar. We offer a 'Remove and Reinstall' service for a fee. Do not let standard roofers unbolt the panels, as this will immediately void your solar warranty."
+    },
+    {
+      "id": 34,
+      "category": "Physical Care & Safety",
+      "document_title": "Painting the House",
+      "content": "If you are having the exterior of your home spray-painted, ensure the painters cover the solar panels with a tarp. If paint overspray gets onto the glass, it will block the sun and permanently reduce your energy production."
+    },
+    {
+      "id": 35,
+      "category": "Physical Care & Safety",
+      "document_title": "Pets and Equipment",
+      "content": "The solar inverters and battery boxes mounted on the side of your house are fully sealed and weather-proof. It is completely safe for dogs or cats to be near them. However, do not let pets chew on any exposed exterior conduits."
+    },
+    {
+      "id": 36,
+      "category": "Physical Care & Safety",
+      "document_title": "Throwing Objects",
+      "content": "While the glass on your solar panels is tempered and very strong, please ask children not to throw baseballs, rocks, or heavy toys onto the roof. Direct impact from heavy, hard objects can shatter the glass."
+    },
+    {
+      "id": 37,
+      "category": "Physical Care & Safety",
+      "document_title": "Fire Safety",
+      "content": "In the event of a house fire, evacuate immediately and call 911. Local fire departments are trained on how to handle homes with solar panels. There is a rapid-shutdown switch on the side of your house they will use to kill the power."
+    },
+    {
+      "id": 38,
+      "category": "Physical Care & Safety",
+      "document_title": "EMF Concerns",
+      "content": "Solar panels and inverters do emit a very small amount of Electromagnetic Fields (EMF), similar to a standard household microwave or Wi-Fi router. It is completely safe and falls well below all government health limits."
+    },
+    {
+      "id": 39,
+      "category": "Physical Care & Safety",
+      "document_title": "Squirrels and Pigeons",
+      "content": "If you notice pigeons nesting or squirrels running under your solar panels, they may chew on the wires. Sunshine Solar can install a protective 'Critter Guard' wire mesh around the edge of the panels to keep animals out."
+    },
+    {
+      "id": 40,
+      "category": "Physical Care & Safety",
+      "document_title": "Cleaning the Inverter",
+      "content": "You do not need to perform any maintenance on the electrical boxes mounted to your wall. If they get dusty or covered in cobwebs, you can gently wipe the outside metal with a dry cloth. Do not spray them directly with a hose."
+    },
+    {
+      "id": 41,
+      "category": "General Information",
+      "document_title": "Panel Lifespan",
+      "content": "Sunshine Solar panels are built to last a very long time. Your system comes with a 25-year warranty, but the panels will likely continue generating electricity for 30 to 40 years, just at a slightly lower efficiency as they age."
+    },
+    {
+      "id": 42,
+      "category": "General Information",
+      "document_title": "Adding More Panels",
+      "content": "If you buy an electric vehicle (EV), build a pool, or add a hot tub, you might start using more electricity than your panels produce. Contact Sunshine Solar sales to discuss adding a few more panels to your existing system."
+    },
+    {
+      "id": 43,
+      "category": "General Information",
+      "document_title": "Support Hours",
+      "content": "The Sunshine Solar customer support team is available by phone or live chat Monday through Friday, from 8:00 AM to 6:00 PM local time. The support office is closed on major holidays."
+    },
+    {
+      "id": 44,
+      "category": "General Information",
+      "document_title": "Emergency Contact",
+      "content": "If you see electrical sparks coming from any solar equipment, smell burning plastic near the inverter, or experience a roof leak during a storm, call our 24/7 Emergency Support Hotline immediately. Do not touch the equipment."
+    },
+    {
+      "id": 45,
+      "category": "General Information",
+      "document_title": "Referral Program",
+      "content": "Sunshine Solar has a great referral program! If you refer a friend or family member, and they install a solar system with us, we will send you a $500 bonus check the day their system is officially turned on."
+    },
+    {
+      "id": 46,
+      "category": "General Information",
+      "document_title": "Utility Bills",
+      "content": "Even with solar panels, you will still receive a piece of mail from your utility company every month. If your panels cover all your power, this bill will just be a small 'connection fee' (usually $10-$20) to stay hooked up to the grid."
+    },
+    {
+      "id": 47,
+      "category": "General Information",
+      "document_title": "Blackouts Without a Battery",
+      "content": "If you only have solar panels and do NOT have a home battery, your power will go out during a grid blackout. This is a safety law to prevent your panels from sending electricity back into the power lines while linemen are fixing them."
+    },
+    {
+      "id": 48,
+      "category": "General Information",
+      "document_title": "Blackouts With a Battery",
+      "content": "If you purchased a Sunshine Solar Battery, your house will automatically switch to battery power during a grid blackout. You probably won't even notice the power went out. The app will show a 'Running off-grid' status."
+    },
+    {
+      "id": 49,
+      "category": "General Information",
+      "document_title": "Net Metering Basics",
+      "content": "Net metering is like rollover minutes for electricity. If you make extra solar power on a sunny Tuesday, it gets pushed to the grid and you earn a credit. When you need power on a rainy Wednesday, you use that credit to get free power back."
+    },
+    {
+      "id": 50,
+      "category": "General Information",
+      "document_title": "Battery Lifespan",
+      "content": "If your system includes a home battery, the battery comes with a 10-year manufacturer warranty. Because batteries involve chemical reactions, they naturally degrade over time, similar to a cell phone battery, but on a much larger scale."
+    }
+  ]
