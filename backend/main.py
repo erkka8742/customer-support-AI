@@ -47,8 +47,7 @@ def _load_data_if_empty():
         print(f"Startup data load error: {e}")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "https://customer-support-ai-1.onrender.com"],
-    allow_credentials=True,
+    allow_origins=["*"],
     allow_methods=["*"],
     allow_headers=["*"],
 )
