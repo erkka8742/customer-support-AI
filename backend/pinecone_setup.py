@@ -7,7 +7,7 @@ from google import genai
 load_dotenv()
 
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-gemini_client = genai.Client()
+gemini_client = genai.Client(http_options={"api_version": "v1"})
 
 INDEX_NAME = "solar-info"
 DIMENSION = 768  # text-embedding-004 output size
