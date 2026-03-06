@@ -28,6 +28,15 @@ def gemini_generate(prompt: str) -> str:
 Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
+
+
+@app.on_event("startup")
+async def startup_event():
+    from pinecone_setup import index, load_solar_data
+    stats = index.describe_index_stats()
+    if stats.total_vector_count == 0:
+        print("Pinecone index is empty — loading solar data...")
+        load_solar_data()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "https://customer-support-ai-1.onrender.com"],
