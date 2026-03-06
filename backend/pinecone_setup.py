@@ -7,7 +7,7 @@ from google import genai
 load_dotenv()
 
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-gemini_client = genai.Client(http_options={"api_version": "v1"})
+gemini_client = genai.Client()
 
 INDEX_NAME = "solar-info"
 DIMENSION = 768  # text-embedding-004 output size
@@ -16,7 +16,7 @@ DIMENSION = 768  # text-embedding-004 output size
 def get_embedding(text: str) -> list:
     response = gemini_client.models.embed_content(
         model="text-embedding-004",
-        contents=text
+        content=text
     )
     return response.embeddings[0].values
 
