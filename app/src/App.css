@@ -1122,6 +1122,37 @@
 .doc-content { font-size: 0.9rem; line-height: 1.65; margin: 0; color: var(--text); }
 
 /* ── Responsive ── */
+
+/* Small laptops / large tablets (width) */
+@media (max-width: 1200px) {
+  .sidebar { left: 1.25rem; }
+  .nav-title { font-size: 0.85rem; }
+  .slide { padding: 4rem 2rem 4rem 6rem; }
+  .slide-title { font-size: 2.2rem; }
+  .slide-content { max-width: 700px; }
+}
+
+/* Short viewports (small laptop height) */
+@media (max-height: 800px) {
+  .slide { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+  .slide-title { font-size: 2rem; margin-bottom: 0.75rem; }
+  .slide-text { font-size: 1rem; margin-bottom: 1.5rem; }
+  .interactive { margin-top: 0.75rem; }
+  .tickets-container { max-height: 45vh; }
+  .company-docs-container { max-height: 45vh; }
+  .hiw-step { padding: 0.85rem 0; }
+  .generate-ticket-section { margin-bottom: 0.85rem; padding-bottom: 0.85rem; }
+  .ticket-form .form-group { margin-bottom: 0.75rem; }
+  .ticket-form textarea { min-height: 70px; }
+}
+
+/* Combined: small laptop (both narrow and short) */
+@media (max-width: 1200px) and (max-height: 800px) {
+  .slide { padding: 2.5rem 2rem 2.5rem 5.5rem; }
+  .slide-title { font-size: 1.85rem; }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   .sidebar { left: 1rem; }
   .nav-title { display: none; }
