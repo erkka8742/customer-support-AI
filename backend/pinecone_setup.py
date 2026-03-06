@@ -2,7 +2,7 @@ import json
 import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
 load_dotenv()
 
@@ -10,7 +10,7 @@ load_dotenv()
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
 
 # Initialize the embedding model
-model = SentenceTransformer("all-MiniLM-L6-v2")
+model = TextEmbedding("sentence-transformers/all-MiniLM-L6-v2")
 
 INDEX_NAME = "solar-info"
 
@@ -45,7 +45,7 @@ def load_solar_data():
     # Prepare vectors for upsert
     vectors = []
     for item in data:
-        embedding = model.encode(item["content"]).tolist()
+        embedding = list(model.embed([item["content"]]))[0].tolist()
         vectors.append({
             "id": str(item["id"]),
             "values": embedding,
@@ -63,7 +63,7 @@ def load_solar_data():
 
 def query_docs(query_text: str, n_results: int = 3):
     """Query Pinecone for relevant documents"""
-    query_embedding = model.encode(query_text).tolist()
+    query_embedding = list(model.embed([query_text]))[0].tolist()
 
     results = index.query(
         vector=query_embedding,
