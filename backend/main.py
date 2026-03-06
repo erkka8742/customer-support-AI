@@ -32,11 +32,19 @@ app = FastAPI()
 
 @app.on_event("startup")
 async def startup_event():
-    from pinecone_setup import index, load_solar_data
-    stats = index.describe_index_stats()
-    if stats.total_vector_count == 0:
-        print("Pinecone index is empty — loading solar data...")
-        load_solar_data()
+    import asyncio
+    asyncio.get_event_loop().run_in_executor(None, _load_data_if_empty)
+
+
+def _load_data_if_empty():
+    try:
+        from pinecone_setup import index, load_solar_data
+        stats = index.describe_index_stats()
+        if stats.total_vector_count == 0:
+            print("Pinecone index is empty — loading solar data...")
+            load_solar_data()
+    except Exception as e:
+        print(f"Startup data load error: {e}")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=["http://localhost:5173", "https://customer-support-ai-1.onrender.com"],
