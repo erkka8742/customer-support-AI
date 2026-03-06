@@ -208,25 +208,25 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
   const [solvingManual, setSolvingManual] = useState<number | null>(null)
 
   const fetchCompanyDocs = async () => {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/api/company-data")
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/company-data`)
     const data = await response.json()
     setCompanyDocs(data)
   }
 
   const fetchTickets = async () => {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/api/tickets")
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/tickets`)
     const data = await response.json()
     setTickets(data)
   }
 
   const fetchSolvedTickets = async () => {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/api/solved-tickets")
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/solved-tickets`)
     const data = await response.json()
     setSolvedTickets(data)
   }
 
   const fetchManualReviewTickets = async () => {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/api/manual-review-tickets")
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/manual-review-tickets`)
     const data = await response.json()
     setManualReviewTickets(data)
   }
@@ -347,7 +347,7 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
   const generateTicket = async (category: string) => {
     setGeneratingTicket(true)
     try {
-      const response = await fetch('${import.meta.env.VITE_API_URL}/api/generate-ticket', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/api/generate-ticket`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ category }),
@@ -362,7 +362,7 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
   }
 
   const createTicket = async () => {
-    const response = await fetch("${import.meta.env.VITE_API_URL}/api/new-ticket", {
+    const response = await fetch(`${import.meta.env.VITE_API_URL}/api/new-ticket`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ name: ticketFormData.name, topic: ticketFormData.topic, description: ticketFormData.description }),
