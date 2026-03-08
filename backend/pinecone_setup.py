@@ -3,20 +3,22 @@ import os
 from dotenv import load_dotenv
 from pinecone import Pinecone
 from google import genai
+from google.genai import types
 
 load_dotenv()
 
 pc = Pinecone(api_key=os.getenv("PINECONE_API_KEY"))
-gemini_client = genai.Client(http_options={"api_version": "v1"})
+gemini_client = genai.Client()
 
 INDEX_NAME = "solar-info"
-DIMENSION = 768  # text-embedding-004 output size
+DIMENSION = 768
 
 
 def get_embedding(text: str) -> list:
     response = gemini_client.models.embed_content(
-        model="text-embedding-004",
-        contents=text
+        model="gemini-embedding-001",
+        contents=text,
+        config=types.EmbedContentConfig(output_dimensionality=768)
     )
     return response.embeddings[0].values
 
@@ -45,8 +47,11 @@ index = get_or_create_index()
 
 
 def load_solar_data():
-    index.delete(delete_all=True)
-    print("Cleared existing data from index")
+    try:
+        index.delete(delete_all=True)
+        print("Cleared existing data from index")
+    except Exception:
+        print("Index namespace empty, skipping clear")
 
     with open("solar_data.json", "r") as f:
         data = json.load(f)
