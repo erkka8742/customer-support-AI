@@ -58,11 +58,11 @@ const slides: Slide[] = [
     content: 'Automated customer support with AI. In this demo app you can create support tickets for an imaginary solar installation company "Sunshine Solar".',
     interactiveType: 'techstack',
     techStack: [
-      { name: 'React, TypeScript', icon: '⚛️' },
-      { name: 'Python, FastAPI', icon: '🐍' },
-      { name: 'Gemini API', icon: '🤖' },
-      { name: 'PostgreSQL', icon: '🐘' },
-      { name: 'Pinecone', icon: '🌲' }
+      { name: 'React, TypeScript', icon: '' },
+      { name: 'Python, FastAPI', icon: '' },
+      { name: 'Gemini API', icon: '' },
+      { name: 'PostgreSQL', icon: '' },
+      { name: 'Pinecone', icon: '' }
     ]
   },
   {
@@ -381,7 +381,6 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
           <div className="tech-stack-grid">
             {techStack.map((tech, i) => (
               <div key={i} className="tech-item">
-                <span className="tech-icon">{tech.icon}</span>
                 <span className="tech-name">{tech.name}</span>
               </div>
             ))}
