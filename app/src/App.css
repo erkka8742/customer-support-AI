@@ -129,19 +129,19 @@
 
 /* ── Slides ── */
 .slides-container {
-  scroll-snap-type: y mandatory;
   overflow-y: auto;
   height: 100vh;
   scroll-behavior: smooth;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
 }
 
 .slide {
-  min-height: 100vh;
+  min-height: auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem 2rem 4rem 8rem;
-  scroll-snap-align: start;
+  padding: 3rem 2rem 3rem 8rem;
   opacity: 0.25;
   transform: scale(0.97);
   transition: all 0.5s ease;
@@ -953,8 +953,8 @@
 .resolve-btn {
   flex: 1;
   min-width: 160px;
-  padding: 0.8rem 1.25rem;
-  font-size: 0.9rem;
+  padding: 1.5rem 2rem;
+  font-size: 1.2rem;
   font-weight: 700;
   border: none;
   border-radius: 10px;

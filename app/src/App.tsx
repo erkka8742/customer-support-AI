@@ -108,28 +108,23 @@ function App() {
   const slideRefs = useRef<(HTMLDivElement | null)[]>([])
 
   useEffect(() => {
-    const observers: IntersectionObserver[] = []
+    const container = document.querySelector('.slides-container') as HTMLElement | null
+    if (!container) return
 
-    slideRefs.current.forEach((ref, index) => {
-      if (ref) {
-        const observer = new IntersectionObserver(
-          (entries) => {
-            entries.forEach((entry) => {
-              if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
-                setActiveSlide(index)
-              }
-            })
-          },
-          { threshold: 0.5 }
-        )
-        observer.observe(ref)
-        observers.push(observer)
-      }
-    })
-
-    return () => {
-      observers.forEach((observer) => observer.disconnect())
+    const handleScroll = () => {
+      const mid = window.innerHeight / 2
+      let bestIndex = 0
+      slideRefs.current.forEach((ref, index) => {
+        if (ref && ref.getBoundingClientRect().top <= mid) {
+          bestIndex = index
+        }
+      })
+      setActiveSlide(bestIndex)
     }
+
+    container.addEventListener('scroll', handleScroll, { passive: true })
+    handleScroll()
+    return () => container.removeEventListener('scroll', handleScroll)
   }, [])
 
   const scrollToSlide = (index: number) => {
@@ -315,7 +310,7 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
     if (type === 'company-data') {
       fetchCompanyDocs()
     }
-    if (type === 'solved-tickets' && isActive) {
+    if (type === 'solved-tickets') {
       fetchSolvedTickets()
     }
     if (type === 'manual-review-tickets' && isActive) {
@@ -658,6 +653,7 @@ function InteractiveElement({ type, isActive }: { type: Slide['interactiveType']
     case 'solved-tickets':
       return (
         <div className="interactive ticket-list">
+          <button className="refresh-btn" onClick={fetchSolvedTickets}>Refresh</button>
           <div className="tickets-container">
             {solvedTickets.length === 0 ? (
               <p className="no-tickets">No solved tickets yet</p>
