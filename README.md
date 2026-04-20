@@ -74,7 +74,7 @@ pip install -r requirements.txt
 Run the server:
 
 ```bash
-uvicorn main:app --reload
+python -m uvicorn main:app --reload
 ```
 
 Backend runs at http://localhost:8000. API docs available at http://localhost:8000/docs.
