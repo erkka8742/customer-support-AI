@@ -104,27 +104,3 @@ uvicorn main:app --reload
 cd app
 npm run dev
 ```
-
-## API Endpoints
-
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| POST | `/api/new-ticket` | Create a new support ticket |
-| GET | `/api/tickets` | List all open tickets |
-| DELETE | `/api/tickets/{id}` | Delete a ticket |
-| GET | `/api/tickets/{id}/suggestions` | Get relevant docs for a ticket |
-| GET | `/api/tickets/{id}/answer` | Generate AI answer for a ticket |
-| POST | `/api/tickets/{id}/resolve` | Resolve ticket (solved or manual review) |
-| POST | `/api/generate-ticket` | Generate a test ticket with AI |
-| GET | `/api/solved-tickets` | List solved tickets |
-| GET | `/api/manual-review-tickets` | List tickets needing manual review |
-| POST | `/api/manual-review-tickets/{id}/solve` | Solve a manual review ticket |
-| GET | `/api/search-docs` | Search knowledge base directly |
-| GET | `/api/company-data` | Get all knowledge base documents |
-
-## Troubleshooting
-
-- **Database connection error**: Check your `DATABASE_URL` in `.env` and make sure PostgreSQL is running
-- **Pinecone errors**: Verify your API key and that you haven't exceeded the free tier limits
-- **Gemini errors**: Check that your `GEMINI_API_KEY` is valid and has access to the embedding and generation models
-- **CORS errors**: The backend allows all origins by default. If you changed this, make sure your frontend URL is allowed
